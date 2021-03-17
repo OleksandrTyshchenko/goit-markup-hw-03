@@ -37,7 +37,21 @@ li {
   list-style-type: none;
 }
 
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Шапка*/
+
+
 
 .web {
   color: var(--accent-color);
@@ -53,36 +67,51 @@ li {
   line-height: 1.2;
 }
 
+.site-nav{
+  padding: 0;
+  margin: 0;
+}
+
 .site-nav .link {
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.2; 
 }
+
 
 .site-nav .link.curent {
   color: var(--accent-color);
 }
 
-.com-nav .com-nav:hover,
-.com-nav .com-nav:focus,
+.com-nav:hover,
+.com-nav:focus,
 .link:hover,
 .link:focus {
   color: var(--accent-color);
 }
 
 
-.com-nav .com-nav {
+.com-nav {
   color: var(--contact-header-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
+  padding: 0;
+  margin: 0;
 }
+
+
+
+
+
 
 
 /* главная страница веб-студия*/
 
 .button-hero {
+  display: inline-block;
+  padding: 10px 32px;
   color: var(--color-white);
   font-family: inherit;
   background-color: var(--accent-color);
@@ -90,6 +119,7 @@ li {
   font-size: 16px;
   line-height: 2;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .button-hero:hover,
@@ -97,17 +127,21 @@ li {
   background-color: var(--button-active-color);
 }
 
-.background-hero {
+.hero {
   background-color: var(--background-hero-color);
+   text-align: center;
 }
 
-.hero {
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px; 
   color: var(--color-white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+ 
 }
 
 .title {
@@ -123,12 +157,14 @@ li {
   line-height: 1.1;
   color: var(--title-color);
   text-transform: uppercase;
+  margin: 0;
 }
 
 .text {
   font-size: 14px;
   line-height: 1.7;
 }
+
 
 .box {
   background-color: var(--box-backgroun-color);
@@ -145,6 +181,16 @@ li {
   font-size: 16px;
   line-height: 1.2;
 }
+
+.visually{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
 
 /* подвал*/
 .page-footer {
@@ -192,6 +238,10 @@ li {
 }
 
 .button-portfolio {
+  display: inline-block;
+  padding: 6px 22px;
+  min-width: 73px;
+  border-radius: 4px;
   color: var(--title-color);
   font-family: inherit;
   background-color: var(--box-backgroun-color);
@@ -199,6 +249,8 @@ li {
   font-size: 16px;
   line-height: 2;
   cursor: pointer;
+  text-align: center;
+  border: none; 
 }
 
 .button-portfolio:hover,
