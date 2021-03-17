@@ -1,0 +1,223 @@
+/* преобладающий цвет текса #757575; */
+/* цвет заголовков #212121; */
+/* цвет актива #2196F3; */
+/* бек-граунд основной #ffffff; */
+/* бек-граунд команды #F5F4FA;*/
+/* текст-лого #000000; */
+
+:root {
+  --dominant-tex-color: #757575;
+  --title-color: #212121;
+  --accent-color: #2196f3;
+  --background-color: #ffffff;
+  --logo-color: #000000;
+  --color-white: #ffffff;
+  --background-hero-color: #2f303a;
+  --button-active-color: #188ce8;
+  --box-backgroun-color: #f5f4fa;
+  --contact-footer-color: rgba(255, 255, 255, 0.6);
+  --contact-header-color: #757575;
+  --background-footer-color: #2f303a;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--dominant-tex-color);
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* Шапка*/
+
+.web {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.studio {
+  color: var(--logo-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.site-nav .link {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.site-nav .link.curent {
+  color: var(--accent-color);
+}
+
+.com-nav .com-nav:hover,
+.com-nav .com-nav:focus,
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+
+.com-nav .com-nav {
+  color: var(--contact-header-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+
+/* главная страница веб-студия*/
+
+.button-hero {
+  color: var(--color-white);
+  font-family: inherit;
+  background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--button-active-color);
+}
+
+.background-hero {
+  background-color: var(--background-hero-color);
+}
+
+.hero {
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--title-color);
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.box {
+  background-color: var(--box-backgroun-color);
+}
+
+.title-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--title-color);
+}
+
+.title-responsibilities {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* подвал*/
+.page-footer {
+  background-color: var(--background-footer-color);
+}
+.studio-white {
+  color: var(--color-white);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.address {
+  font-size: 14px;
+  line-height: 2;
+  color: var(--color-white);
+  font-style: normal;
+}
+
+.contact {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--contact-footer-color);
+  font-style: normal;
+}
+
+.address:hover,
+.address:focus,
+.contact:hover,
+.contact:focus {
+  color:var(--accent-color)
+}
+
+
+/*главаня страница портфолио*/
+.project {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--title-color);
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.button-portfolio {
+  color: var(--title-color);
+  font-family: inherit;
+  background-color: var(--box-backgroun-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--color-white);
+  background-color: var(--accent-color);
+}
+
+.filter .button-portfolio.curent {
+  background-color: var(--accent-color);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
