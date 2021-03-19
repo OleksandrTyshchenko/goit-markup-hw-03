@@ -334,7 +334,7 @@ img {
   color: var(--accent-color);
 }
 
-.container.footer {
+.container .footer {
   padding: 60px 0px;
 }
 
