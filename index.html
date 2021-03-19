@@ -16,43 +16,47 @@
         <!--Шапка-->
         <header class="page-header">
            <div class="container">
-                <nav>
-                    <a href="/"><span class="web">Web</span><span class="studio">Studio</span></a>
+                <nav class="main-nav">
+                    <a class="logo" href="/"><span class="web">Web</span><span class="studio">Studio</span></a>
                     <ul class="site-nav">
-                     <li><a class="link curent" href="./index.html">Студия</a></li>
-                     <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-                     <li><a class="link" href="">Контакты</a></li>
+                     <li class="site-link"><a class="link curent" href="./index.html">Студия</a></li>
+                     <li class="site-link"><a class="link" href="./portfolio.html">Портфолио</a></li>
+                     <li class="site-link"><a class="link" href="">Контакты</a></li>
                     </ul>
                 </nav>
                     <ul class="com-nav">
-                       <li><a class="com-nav" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                       <li><a class="com-nav" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                       <li class="site-item"><a class="item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                       <li class="site-item"><a class="item" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
           </div>
         </header>
         <!--Главная страница-->
         <main>
             <section class="hero">
-                  <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                  <button class="button-hero" type="button">Заказать услугу</button>
-            </section>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                        <button class="button-hero" type="button">Заказать услугу</button>
+                    </div>
+                 </div>
+           </section>
             <section class="section">
                <div class="container">
                    <h2 class="visually-hidden">О нас</h2> <!--скроем-->
                     <ul class="visually">
-                        <li>
+                        <li class="visually-title">
                             <h3 class="subtitle">Внимание к деталям</h3>
                             <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                         </li>
-                        <li>
+                        <li class="visually-title">
                             <h3 class="subtitle">Пунктуальность</h3>
                             <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </li>
-                        <li>
+                        <li class="visually-title">
                             <h3 class="subtitle">Планирование</h3>
                             <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </li>
-                        <li>
+                        <li class="visually-title">
                             <h3 class="subtitle">Современные технологии</h3>
                             <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                         </li>
@@ -62,14 +66,14 @@
             <section class="section">
                 <div class="container">
                     <h2 class="title">Чем мы занимаемся</h2>
-                    <ul class="title-list">
-                        <li>
+                    <ul class="title-list grid">
+                        <li class="grid-title">
                             <img src="./images/imgs.jpg" alt="проектирование" width="370" height="294">
                         </li>
-                        <li>
+                        <li class="grid-title">
                             <img src="./images/img1s.jpg" alt="Дизайн" width="370" height="294">
                         </li>
-                        <li>
+                        <li class="grid-title">
                             <img src="./images/img2s.jpg" alt="Редакция" width="370" height="294">
                         </li>
                     </ul>
@@ -78,26 +82,34 @@
             <section class="box section">
              <div class="container">
                 <h2 class="title">Наша команда</h2>
-                <ul class="title-list">
-                    <li>
+                <ul class="title-list grid">
+                    <li class="grid-title grid-team">
                         <img src="./images/m3s.jpg" alt="Игорь Демьяненко Продакт-дизайнер" Width="270" Height="260">
-                        <h3 class="title-team">Игорь Демьяненко</h3>
-                        <p class="title-responsibilities" lang="en">Product Designer</p>
+                        <div class="signature-team">
+                            <h3 class="title-team">Игорь Демьяненко</h3>
+                            <p class="title-responsibilities" lang="en">Product Designer</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="grid-title grid-team">
                         <img src="./images/ws.jpg" alt="Ольга Репина Фронтенд-разработчик" Width="270" Height="260">
-                        <h3 class="title-team">Ольга Репина</h3>
-                        <p class="title-responsibilities" lang="en">Frontend Developer</p>
+                        <div class="signature-team">
+                            <h3 class="title-team">Ольга Репина</h3>
+                            <p class="title-responsibilities" lang="en">Frontend Developer</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="grid-title grid-team">
                         <img src="./images/ms.jpg" alt="Николай Тарасов Маркетинг" Width="270" Height="260">
-                        <h3 class="title-team">Николай Тарасов</h3>
-                        <p class="title-responsibilities" lang="en">Marketing</p>
+                        <div class="signature-team">
+                            <h3 class="title-team">Николай Тарасов</h3>
+                            <p class="title-responsibilities" lang="en">Marketing</p>
+                        </div>
                     </li>
-                    <li>
+                    <li class="grid-title grid-team">
                         <img src="./images/m2s.jpg" alt="Михаил Ермаков Веб-дизайн" Width="270" Height="260">
-                        <h3 class="title-team">Михаил Ермаков</h3>
-                        <p class="title-responsibilities" lang="en">UI Designer</p>
+                        <div class="signature-team">
+                            <h3 class="title-team">Михаил Ермаков</h3>
+                            <p class="title-responsibilities" lang="en">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
              </div>
