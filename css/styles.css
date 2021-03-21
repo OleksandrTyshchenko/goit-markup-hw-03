@@ -87,6 +87,8 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link.curent {
@@ -106,8 +108,9 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
-  padding: 0;
   margin: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .page-header {
@@ -172,7 +175,8 @@ img {
 .hero {
   background-color: var(--background-hero-color);
   text-align: center;
-  min-height: 100vh;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   align-items: center;
 }
@@ -196,6 +200,10 @@ img {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.section-title {
+  padding-top: 0px;
 }
 
 .title {
@@ -232,8 +240,9 @@ img {
 
 .signature-team {
   padding-top: 30px;
-
+  padding-left: 24px;
   padding-bottom: 30px;
+  padding-right: 24px;
 
   text-align: center;
   background: #ffffff;
@@ -295,6 +304,8 @@ img {
 /* подвал*/
 .page-footer {
   background-color: var(--background-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .studio-white {
   color: var(--color-white);
@@ -362,7 +373,9 @@ img {
 }
 
 .card {
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
@@ -376,6 +389,10 @@ img {
   margin-top: 0px;
   padding: 0px;
   list-style: none;
+}
+
+.filter-button:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button-portfolio {
