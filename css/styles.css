@@ -130,6 +130,8 @@ img {
   display: flex;
   align-items: center;
   margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 .site-nav {
@@ -144,8 +146,10 @@ img {
 
 .com-nav {
   display: flex;
-  padding-left: 0px;
+  padding-left: 0px
   justify-content: flex-end;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .site-item:not(:last-child) {
