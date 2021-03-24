@@ -110,7 +110,7 @@ img {
   line-height: 1.2;
   margin: 0;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 32px; 
 }
 
 .page-header {
@@ -377,6 +377,18 @@ img {
   margin-top: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
 }
+
+.card-projetc {
+  color: var(--contact-header-color);
+}
+
+.card-projetc:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16); 
+}
+
+
 
 .card {
   border-bottom: 1px solid #eeeeee;
